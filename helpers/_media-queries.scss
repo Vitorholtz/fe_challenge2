@@ -10,7 +10,7 @@
 
     html {
  
-     font-size: 41%;
+     font-size: 42%;
     }
     
  }
@@ -24,6 +24,11 @@
         .desc-img{ 
 
             margin: auto;
+              
+              img{
+                  width: 100%;
+
+              }
             
             }  
             
@@ -31,7 +36,6 @@
 
         padding: 5rem;
         display: block;
-        width: 80%;
         position: initial;
         margin: auto;
         text-align: center;
@@ -55,21 +59,118 @@
     }
 
     footer {
+        
 
         .footer-content {
 
             flex-direction: column;
-            height: 40rem;
+            max-width: 70rem;
+
 
             .footer-info, .footer-social {
+                width: auto;
                 align-items: center;
                 justify-content: center;
-                margin: 0;
+                margin: 10rem auto;
                 gap: 5rem;
             }
 
         }
     }
 
-    
  }
+
+ @media (max-width: 650px){
+
+    .hero {
+        
+        header {
+
+            .nav {
+
+                display: none;
+            }
+        }
+        .hero_container {
+
+            .call-to-action {
+
+                width: 90%;
+                margin: auto;
+
+                h1 {
+                    font-size: 6rem;
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        position: relative;
+
+        .portfolio-header {
+
+            flex-direction: column;
+            text-align: center;
+
+            button {
+                align-self: center;
+                margin-top: 10rem; 
+                padding: 3rem 8rem;
+                font-size: 2.6rem;
+                position: absolute;
+                bottom: -15rem;
+            }
+        }
+
+        .gallery-container{
+
+            max-width: 120rem;
+            margin: auto;
+            padding: 0 1.5rem;
+        
+            .image-gallery {
+
+                grid-template-columns: 1fr;
+                grid-gap: 7rem;
+                grid-template-areas: 
+                'img-1' 'img-2' 'img-3' 'img-4'
+                'img-5' 'img-6' 'img-7' 'img-8';
+            }
+        }
+
+    }
+
+    
+    footer {
+
+        margin-top: 30rem;
+        
+
+        .footer-content {
+
+            max-width: 100%;
+
+            .footer-info {
+                margin-top: 20rem; 
+
+                img {
+
+                    width: 26rem;
+                }
+
+                  .nav {
+                      gap: 10px;
+                      margin: 0;
+                      flex-direction: column;
+                      text-align: center;
+                      font-size: 3rem;                      
+        
+                    }
+                }
+  
+            }
+        }
+    }
+
+ 
