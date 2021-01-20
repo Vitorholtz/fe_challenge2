@@ -1,7 +1,8 @@
 .portfolio {
 
-    width: 1200px;
-    margin: auto;
+    width: 120rem;
+    margin: 20rem auto;
+    
 
     .portfolio-header {
 
@@ -68,14 +69,25 @@
                  top: 0;
                  left: 0;
                  background-color: rgba(0,0,0, .8);
-                 opacity: 0;
+                 opacity: .5;
                  transition: opacity .5s;
             }
             
             &:hover i, &:hover::before{
-                opacity: 1;
+                opacity: 0;
             
-            
+            }
+
+            h3 {
+
+                color: white;
+                font-size: 4rem;
+                text-transform: uppercase;
+                font-weight: 200;
+                z-index: 100;
+                position: absolute;
+                bottom: 2rem;
+                left: 2rem;
             }
         
         }
