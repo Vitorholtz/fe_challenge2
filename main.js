@@ -11,7 +11,7 @@ const navSlide = () => {
     });
 
     close.addEventListener('click', () => {
-        nav.style = 'transform: translateX(100%); display: none;'
+        nav.style = 'transform: translateX(-100%);'
         close.style = 'display: none';
         burger.style = 'display: block';
     });

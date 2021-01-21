@@ -513,8 +513,8 @@ footer .footer-content .footer-social .social-icons {
     background-color: black;
     z-index: 101;
     padding: 5rem;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
     -webkit-transition: -webkit-transform .2s ease-in-out;
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
