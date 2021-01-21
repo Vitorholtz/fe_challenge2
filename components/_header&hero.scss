@@ -25,6 +25,22 @@
           @include nav-button()
         }
 
+        .fa-bars {
+
+            font-size: 4rem;
+            color: $White;
+            margin-right: 7rem;
+            display: none;
+        }
+
+        .fa-times {
+
+            font-size: 4rem;
+            color: $White;
+            margin-right: 7rem;
+            display: none;
+        }
+
     }
 
     .hero_container {
