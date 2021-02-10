@@ -4,6 +4,7 @@ const navSlide = () => {
     const close = document.querySelector ('.fa-times');
     const nav = document.querySelector ('.nav');
 
+
     burger.addEventListener('click', () => {
         nav.style = 'transform: translateX(0%);';
         close.style = 'display: block';
@@ -15,9 +16,9 @@ const navSlide = () => {
         close.style = 'display: none';
         burger.style = 'display: block';
     });
-
-    
+ 
 
 }
 
     navSlide ();
+
